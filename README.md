@@ -48,7 +48,7 @@ The project is outlined in the following steps.
 
 # Data Retrieval and Processing
 # 1.	Retrieval:
-In this process, the central index key (CIK) is used for accessing company filings from the SEC website. The function “get_cik_number_by_ticker” is defined to automate the data retrieval process. 
+Using Central Index Key (CIK) information, SEC filings are retrieved with the help of the unique custom function get_cik_number_by_ticker. To analyze the potential impact on the stock price movement, SEC documents 8-K filings are retrieved and stored. 
 
 # 2.	Exploration: 
 The retrieval data is organized in the data frame with details of accession number, filing dates, document descriptions, etc. After accessing the variety of filing, the project focuses on the ‘8-k’ filing for further analysis.
