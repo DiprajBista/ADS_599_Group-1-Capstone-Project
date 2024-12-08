@@ -1,15 +1,15 @@
 # ADS_599_Group-1-Capstone-Project
 
-# Financial Data Analysis and Data Extraction From EDGAR
+# Predicting Market Trends: Analyzing the Correlation Between SEC 8-K Disclosures and Stock Price Movements 
 
-This project is part of the ADS_509 Applied Text Mining course in the Applied Data Science Program at the University of San Diego.
+This project is part of the ADS_599 Capstone Project course in the Applied Data Science Program at the University of San Diego.
 
 # -- Project Status: Completed
 
 # Installation
 1. Clone this repository:
 git init
-git clone https://github.com/DiprajBista/ADS509-Group-2-APPLIED-TEXT-MINING-FINAL-PROJECT.git
+git clone https://github.com/DiprajBista/ADS_599_Group-1-Capstone-Project.git
 
 2. Install the required Python libraries:
 pip install -r requirements.txt
