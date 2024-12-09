@@ -68,7 +68,6 @@ The regression models such as Random Forest and Gradient Boosting struggled to p
 # Conclusion
 The project explores the sentiment analysis of the SEC 8-K filing using the FinBERT to uncover the correlations between the sentiment scores and stock price movement. The project aims to democratize the investment by providing financial insights to the retailer investors so that they can compete with institutional investors and make data-driven real-time investment decisions. The weak predictive performance of the regression model highlights the complexity of the financial market. The higher accuracy of the classification model is likely from the overfitting and class imbalance. The analysis confirms that sentiment analysis is a valuable technique but needs to be combined with macroeconomic variables, financial parameters, and collaborating with financial professionals. The project lays a solid foundation for future improvements. Future directions include incorporating more diverse datasets, and additional market variables, analyzing social media sentiment, enhancing predictive accuracies, and developing an interactive dashboard for broader access to financial insights.
 
-+
 # License
 1. This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) file for details.
 2. This project is licensed under the Apache License 2.0 - see the [LICENSE](https://www.apache.org/licenses/LICENSE-2.0) file for details.
