@@ -66,13 +66,13 @@ The modeling section explores the relationship between sentiment extracted from 
 The regression models such as Random Forest and Gradient Boosting struggled to predict the stock price movement because of the market noise and limited explanatory power of sentiment and financial features. Neural Networks and Support Vector regression models faced challenges in capturing significant relationships and produced inconsistent results. The performance of the gain/loss classification model achieved higher accuracy which could be explained because of the overfitting or class imbalance. The results and findings suggested that further research is required incorporating additional market variables as sentiment alone provided limited predictive power. 
 
 # Conclusion
-The project completes the process of text extraction, classification, and topic modeling on SEC filing. Thematic patterns were observed using topic modeling techniques like NMF, LSA, and LDA. The classification result and sentiment analysis are sure to dictate the market analysis of the stock companies. The project helps investors and stakeholders gauge financial health and conduct risk analyses. Text mining of financial filings proved to be a powerful tool for identifying hidden patterns, outperforming traditional financial analysis in market risk evaluation. The project laid a solid foundation for future improvements. Future directions include incorporating more diverse datasets, analyzing social media sentiment, and developing an interactive dashboard for broader access to financial insights.
+The project explores the sentiment analysis of the SEC 8-K filing using the FinBERT to uncover the correlations between the sentiment scores and stock price movement. The project aims to democratize the investment by providing financial insights to the retailer investors so that they can compete with institutional investors and make data-driven real-time investment decisions. The weak predictive performance of the regression model highlights the complexity of the financial market. The higher accuracy of the classification model is likely from the overfitting and class imbalance. The analysis confirms that sentiment analysis is a valuable technique but needs to be combined with macroeconomic variables, financial parameters, and collaborating with financial professionals. The project lays a solid foundation for future improvements. Future directions include incorporating more diverse datasets, and additional market variables, analyzing social media sentiment, enhancing predictive accuracies, and developing an interactive dashboard for broader access to financial insights.
 
++
 # License
 1. This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) file for details.
 2. This project is licensed under the Apache License 2.0 - see the [LICENSE](https://www.apache.org/licenses/LICENSE-2.0) file for details.
 3. This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html) file for details.
-
 
 # Acknowledgments
 
