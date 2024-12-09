@@ -6,6 +6,18 @@ This project is part of the ADS_599 Capstone Project course in the Applied Data 
 
 # -- Project Status: Completed
 
+## Table of Contents
+1. [Installation](#installation)
+2. [Project Intro/Objective](#project-introobjective)
+3. [Partner(s)/Contributor(s)](#partnerscontributors)
+4. [Methods Used](#methods-used)
+5. [Technologies](#technologies)
+6. [Project Description](#project-description)
+7. [Results and Findings](#results-and-findings)
+8. [Conclusion](#conclusion)
+9. [License](#license)
+10. [Acknowledgments](#acknowledgments)
+
 # Installation
 1. Clone this repository:
 git init
