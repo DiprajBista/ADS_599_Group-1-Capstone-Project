@@ -48,25 +48,22 @@ The project is outlined in the following steps.
 
 # Data Retrieval and Processing
 # 1.	Retrieval:
-Using Central Index Key (CIK) information, SEC filings are retrieved with the help of the unique custom function get_cik_number_by_ticker. To analyze the potential impact on the stock price movement, SEC documents 8-K filings are retrieved and stored. 
+Using Central Index Key (CIK) information, SEC filings are retrieved with the help of the unique custom function get_cik_number_by_ticker. To analyze the potential impact on the stock price movement, SEC documents 8-K filings are retrieved and stored. 8-K filing discloses significant company events such as mergers, acquisitions, etc. 
 
 # 2.	Exploration: 
-The retrieval data is organized in the data frame with details of accession number, filing dates, document descriptions, etc. After accessing the variety of filing, the project focuses on the ‘8-k’ filing for further analysis.
+The raw retrieval data is organized in a structured format to continue further development and analysis. The several components of SEC filings are accession numbers, filing dates, document descriptions, etc. These steps laid the foundation for the further data processing process focusing on the 8-K filing. This helps to identify which data are substantial for stock prices. 
 
 # 3.	Scraping: 
-Focusing on the ‘8-k’ filing, the data is extracted in the scraping phase of the project. The CIK is used for the companies to scrape the documents from the SEC database. The BeautifulSoup library is used to parse the HTML documents. The key financial information is scraped in this step to carry them for further steps.  
+BeautifulSoup, a Python library, is implemented for scraping SEC 8-K filing from the EDGAR database. The scraping events focus on the events that influence stock price from the large corpus of datasets available. The scrapped volume of data needs to be processed later for sentiment analysis and correlation analysis with the market stock price.   
 
 # 4.	Processing:
-This step prepares the final data for the modeling analysis. The scrapped data is organized into a properly structured data frame with key financial information such as filing dates, accession numbers, etc. The dataset is prepared for further financial analysis, risk analysis, and decision-making process.
-   
+The scrapped SEC 8-K filing data is cleaned and processed for the  next steps. Data preprocessing includes removing irrelevant data, normalizing the data, and standardizing the data format. The FinBERT model requires the processed uniformly structured data for applying the sentiment analysis. This processing step is crucial as we prepare the dataset for extracting insights into the relationship between sentiment and stock market price fluctuations. 
+  
 # Modeling
-In the first step, spaCy's Named Entity Recognition (NER) extracts key entities such as dates, organizations, and people from disclosure texts, with "DATE" and "ORG". The next step is followed by the implementation of the Random Forest model using TF-IDF to vectorize the text data. This step is followed by the modern topic modeling approaches. In this project, we used different topic modeling like NMF, LSA, and LDA. The thematic structure of the text is studied after analyzing the results of the different models.
+The modeling section explores the relationship between sentiment extracted from the SEC 8-K filing and market stock fluctuations. The FinBERT model performs the financial sentiment analysis to predict market stock price using regression and classification. Some of the implemented regression algorithms are  Random Forest, Gradient Boosting Machines (GBMs), Neural Networks, and Support Vector Regressors (SVRs). The significant features of the data such as sentiment scores, prices, and stock volume are preprocessed to analyze class imbalance, feature scaling, and correlations. Model optimization is also tried with the exploration of hyperparameter tuning and SMOTE for classification.      
 
-# Model Evaluation
-The three-topic modeling algorithm NMF, LSA, and LDA is compared in the model evaluation step.  NMF effectively clustered Item 202 disclosures into a single topic. Similarly, LSA differentiated between Items 502 and 507. Lastly, LDA, known for handling overlapping themes, assigned certain items like 901 and 507 across multiple topics. Some of the areas to be explored would include the analysis of coherence scores. Also, combining NMF and LDA to create hybrid models would be interesting for observing the model improvement. 
-
-# Further Analysis and LDA Visualization
-The LDA visualization is performed using λ = 1 and λ = 0.5 to visualize the frequent terms within each topic. The λ = 1 provides excellent visualization but there were some issues of overlap in topics 1, 4, and 5. However, at λ = 0.5, the well-balanced visualization includes frequent and unique terms eliminating previous overlapping concerns. This step reduces the overlapping but retains the connections. 
+# Results and Findings 
+The regression models such as Random Forest and Gradient Boosting struggled to predict the stock price movement because of the market noise and limited explanatory power of sentiment and financial features. Neural Networks and Support Vector regression models faced challenges in capturing significant relationships and produced inconsistent results. The performance of the gain/loss classification model achieved higher accuracy which could be explained because of the overfitting or class imbalance. The results and findings suggested that further research is required incorporating additional market variables as sentiment alone provided limited predictive power. 
 
 # Conclusion
 The project completes the process of text extraction, classification, and topic modeling on SEC filing. Thematic patterns were observed using topic modeling techniques like NMF, LSA, and LDA. The classification result and sentiment analysis are sure to dictate the market analysis of the stock companies. The project helps investors and stakeholders gauge financial health and conduct risk analyses. Text mining of financial filings proved to be a powerful tool for identifying hidden patterns, outperforming traditional financial analysis in market risk evaluation. The project laid a solid foundation for future improvements. Future directions include incorporating more diverse datasets, analyzing social media sentiment, and developing an interactive dashboard for broader access to financial insights.
