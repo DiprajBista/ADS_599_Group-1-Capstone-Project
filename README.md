@@ -90,8 +90,8 @@ The project explores the sentiment analysis of the SEC 8-K filing using the FinB
 We would like to express our gratitude to the following individuals and organizations whose contributions and resources have been invaluable to the success of this project:
 
 - **University of San Diego** for providing the academic foundation through the Applied Data Science Program.
-- **Professor Ebrahim Tarshizi** for his guidance throughout the course.
-- **FinBERT** for sentiment analysis of the financial text.
+- **Professor Ebrahim Tarshizi** for invaluable guidance and feedback.
+- **FinBERT** for offering a powerful tool for sentiment analysis of the financial text.
 - **spaCy** for the Named Entity Recognition (NER) tool used in this project.
 - **BeautifulSoup** and **Requests** libraries for web scraping functionality.
 - **scikit-learn** and **NMF/LSA/LDA** libraries for the machine learning and topic modeling components.
