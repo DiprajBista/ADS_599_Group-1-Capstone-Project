@@ -97,3 +97,4 @@ We would like to express our gratitude to the following individuals and organiza
 - **scikit-learn** and **NMF/LSA/LDA** libraries for the machine learning and topic modeling components.
 - Open-source contributors who maintain the Python libraries crucial for this project.
 
+[Back to Table of Contents](#table-of-contents)
